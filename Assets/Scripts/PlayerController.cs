@@ -43,7 +43,7 @@ public class PlayerController : MonoBehaviour
             // Launch a projectile from the player
             //Instantiate = spawns the object, parent assigned to new object, rotation of object
             //projectile, your position, rotation of prefab
-            Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
+            Instantiate(projectilePrefab, transform.position + new Vector3(0,1.5f,0), projectilePrefab.transform.rotation);
         }
 
     }
